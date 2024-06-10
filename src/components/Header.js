@@ -36,7 +36,7 @@ function Header() {
     const logOut = () => {
         dispatch(logoutUser())
         .then(() => {
-            navigate('/sign-in');
+            navigate('/');
         });
         handleCloseUserMenu()
       };
