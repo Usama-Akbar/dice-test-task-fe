@@ -73,7 +73,6 @@ export const loadUser = createAsyncThunk(
       });
       return response.data; // The payload to be passed to fulfilled
     } catch (error) {
-      showErrorToast(error.response.data.message);
       return rejectWithValue(error.response.data); // The payload to be passed to rejected
     }
   }

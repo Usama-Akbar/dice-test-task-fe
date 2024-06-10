@@ -46,7 +46,7 @@ function Home() {
       if (loadUser.fulfilled) {
       
         console.log(result)
-      } else  if(result.payload.code === 401){
+      } else {
         dispatch(logoutUser())
         navigate('/sign-in')
       }

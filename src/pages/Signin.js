@@ -29,7 +29,7 @@ export default function SignIn() {
     dispatch(signInUser(user))
     .then((result) => {
       if (signInUser.fulfilled.match(result)) {
-         navigate('/');
+         navigate('/home');
       } else {
         console.log(result.payload);
       }

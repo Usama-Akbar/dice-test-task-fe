@@ -107,7 +107,7 @@ export default function SignUp() {
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link style={{cursor:"pointer"}} onClick={()=>{navigate("/sign-in")}} variant="body2">
+                <Link style={{cursor:"pointer"}} onClick={()=>{navigate("/")}} variant="body2">
                   Already have an account? Sign in
                 </Link>
               </Grid>
