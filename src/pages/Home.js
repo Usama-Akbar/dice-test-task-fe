@@ -43,12 +43,10 @@ function Home() {
   React.useEffect(() => {
     console.log("WORKING")
     dispatch(loadUser()).then((result) => {
-      if (loadUser.fulfilled) {
-      
-        console.log(result)
-      } else {
-        dispatch(logoutUser())
-        navigate('/sign-in')
+      if (loadUser.fulfilled.type ) {
+        if(result.payload.code === 401){
+          dispatch(logoutUser())
+          navigate('/')}
       }
     }
     );
