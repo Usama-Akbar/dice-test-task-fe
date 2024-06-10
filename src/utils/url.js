@@ -1,1 +1,1 @@
-export const baseUrl = "https://dice-test-task-be.vercel.app/";
+export const baseUrl = "https://dice-test-task-be.vercel.app";
